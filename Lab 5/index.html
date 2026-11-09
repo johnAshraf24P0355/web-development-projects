@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies Watch List - Lab Task 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎬 Movies Watch List</h1>
+
+    <div class="form-group">
+      <input type="text" id="movieTitle" placeholder="Movie title..." />
+      
+      <select id="movieRating">
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5" selected>5 Stars</option>
+      </select>
+
+      <textarea id="movieReview" placeholder="Write a comment/review..."></textarea>
+      
+      <button class="add-btn" id="addBtn">Add Movie</button>
+    </div>
+
+    <div class="movie-list" id="movieList">
+      <p class="empty-msg" id="emptyMsg">No movies added yet.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
